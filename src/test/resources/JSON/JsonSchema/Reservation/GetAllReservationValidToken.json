@@ -152,20 +152,21 @@
             ]
           }
         },
-        "examples": [{
-          "reservation_id": 97,
-          "email": "jodioperator2@gmail.com",
-          "parking_slot_id": 33,
-          "vehicle_type": "Motorcycle",
-          "floor": 4,
-          "slot": 2,
-          "price": 6000,
-          "parking_id": 2,
-          "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1713366312/tqrmy9xclnqh6ethen4p.jpg",
-          "location": "Grand Indonesia",
-          "city": "Jakarta",
-          "payment_status": ""
-        },
+        "examples": [
+          {
+            "reservation_id": 97,
+            "email": "jodioperator2@gmail.com",
+            "parking_slot_id": 33,
+            "vehicle_type": "Motorcycle",
+            "floor": 4,
+            "slot": 2,
+            "price": 6000,
+            "parking_id": 2,
+            "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1713366312/tqrmy9xclnqh6ethen4p.jpg",
+            "location": "Grand Indonesia",
+            "city": "Jakarta",
+            "payment_status": ""
+          },
           {
             "reservation_id": 96,
             "email": "jodioperator2@gmail.com",
@@ -235,23 +236,25 @@
             "location": "Tunjungan Plaza Mall",
             "city": "Surabaya",
             "payment_status": ""
-          }]
+          }
+        ]
       },
       "examples": [
-        [{
-          "reservation_id": 97,
-          "email": "jodioperator2@gmail.com",
-          "parking_slot_id": 33,
-          "vehicle_type": "Motorcycle",
-          "floor": 4,
-          "slot": 2,
-          "price": 6000,
-          "parking_id": 2,
-          "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1713366312/tqrmy9xclnqh6ethen4p.jpg",
-          "location": "Grand Indonesia",
-          "city": "Jakarta",
-          "payment_status": ""
-        },
+        [
+          {
+            "reservation_id": 97,
+            "email": "jodioperator2@gmail.com",
+            "parking_slot_id": 33,
+            "vehicle_type": "Motorcycle",
+            "floor": 4,
+            "slot": 2,
+            "price": 6000,
+            "parking_id": 2,
+            "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1713366312/tqrmy9xclnqh6ethen4p.jpg",
+            "location": "Grand Indonesia",
+            "city": "Jakarta",
+            "payment_status": ""
+          },
           {
             "reservation_id": 96,
             "email": "jodioperator2@gmail.com",
@@ -321,7 +324,8 @@
             "location": "Tunjungan Plaza Mall",
             "city": "Surabaya",
             "payment_status": ""
-          }]
+          }
+        ]
       ]
     },
     "message": {
@@ -333,92 +337,96 @@
       ]
     }
   },
-  "examples": [{
-    "code": 200,
-    "data": [{
-      "reservation_id": 97,
-      "email": "jodioperator2@gmail.com",
-      "parking_slot_id": 33,
-      "vehicle_type": "Motorcycle",
-      "floor": 4,
-      "slot": 2,
-      "price": 6000,
-      "parking_id": 2,
-      "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1713366312/tqrmy9xclnqh6ethen4p.jpg",
-      "location": "Grand Indonesia",
-      "city": "Jakarta",
-      "payment_status": ""
-    },
-      {
-        "reservation_id": 96,
-        "email": "jodioperator2@gmail.com",
-        "parking_slot_id": 31,
-        "vehicle_type": "Motorcycle",
-        "floor": 2,
-        "slot": 2,
-        "price": 90000,
-        "parking_id": 2,
-        "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1713366312/tqrmy9xclnqh6ethen4p.jpg",
-        "location": "Grand Indonesia",
-        "city": "Jakarta",
-        "payment_status": ""
-      },
-      {
-        "reservation_id": 95,
-        "email": "jodioperator2@gmail.com",
-        "parking_slot_id": 4,
-        "vehicle_type": "motorcycle",
-        "floor": 2,
-        "slot": 2,
-        "price": 5000,
-        "parking_id": 1,
-        "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1713365922/otaqzqgda5w29a03tmys.jpg",
-        "location": "Tunjungan Plaza Mall",
-        "city": "Surabaya",
-        "payment_status": ""
-      },
-      {
-        "reservation_id": 94,
-        "email": "jodioperator2@gmail.com",
-        "parking_slot_id": 1,
-        "vehicle_type": "car",
-        "floor": 1,
-        "slot": 1,
-        "price": 1000,
-        "parking_id": 1,
-        "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1713365922/otaqzqgda5w29a03tmys.jpg",
-        "location": "Tunjungan Plaza Mall",
-        "city": "Surabaya",
-        "payment_status": ""
-      },
-      {
-        "reservation_id": 93,
-        "email": "jodioperator2@gmail.com",
-        "parking_slot_id": 19,
-        "vehicle_type": "Motorcycle",
-        "floor": 2,
-        "slot": 3,
-        "price": 5000,
-        "parking_id": 10,
-        "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1714505339/jrb7raqgj9qoonvqdfm1.jpg",
-        "location": "lapangan ",
-        "city": " ",
-        "payment_status": ""
-      },
-      {
-        "reservation_id": 92,
-        "email": "jodioperator2@gmail.com",
-        "parking_slot_id": 6,
-        "vehicle_type": "motorcycle",
-        "floor": 2,
-        "slot": 3,
-        "price": 5000,
-        "parking_id": 1,
-        "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1713365922/otaqzqgda5w29a03tmys.jpg",
-        "location": "Tunjungan Plaza Mall",
-        "city": "Surabaya",
-        "payment_status": ""
-      }],
-    "message": "success get reservation history"
-  }]
+  "examples": [
+    {
+      "code": 200,
+      "data": [
+        {
+          "reservation_id": 97,
+          "email": "jodioperator2@gmail.com",
+          "parking_slot_id": 33,
+          "vehicle_type": "Motorcycle",
+          "floor": 4,
+          "slot": 2,
+          "price": 6000,
+          "parking_id": 2,
+          "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1713366312/tqrmy9xclnqh6ethen4p.jpg",
+          "location": "Grand Indonesia",
+          "city": "Jakarta",
+          "payment_status": ""
+        },
+        {
+          "reservation_id": 96,
+          "email": "jodioperator2@gmail.com",
+          "parking_slot_id": 31,
+          "vehicle_type": "Motorcycle",
+          "floor": 2,
+          "slot": 2,
+          "price": 90000,
+          "parking_id": 2,
+          "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1713366312/tqrmy9xclnqh6ethen4p.jpg",
+          "location": "Grand Indonesia",
+          "city": "Jakarta",
+          "payment_status": ""
+        },
+        {
+          "reservation_id": 95,
+          "email": "jodioperator2@gmail.com",
+          "parking_slot_id": 4,
+          "vehicle_type": "motorcycle",
+          "floor": 2,
+          "slot": 2,
+          "price": 5000,
+          "parking_id": 1,
+          "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1713365922/otaqzqgda5w29a03tmys.jpg",
+          "location": "Tunjungan Plaza Mall",
+          "city": "Surabaya",
+          "payment_status": ""
+        },
+        {
+          "reservation_id": 94,
+          "email": "jodioperator2@gmail.com",
+          "parking_slot_id": 1,
+          "vehicle_type": "car",
+          "floor": 1,
+          "slot": 1,
+          "price": 1000,
+          "parking_id": 1,
+          "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1713365922/otaqzqgda5w29a03tmys.jpg",
+          "location": "Tunjungan Plaza Mall",
+          "city": "Surabaya",
+          "payment_status": ""
+        },
+        {
+          "reservation_id": 93,
+          "email": "jodioperator2@gmail.com",
+          "parking_slot_id": 19,
+          "vehicle_type": "Motorcycle",
+          "floor": 2,
+          "slot": 3,
+          "price": 5000,
+          "parking_id": 10,
+          "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1714505339/jrb7raqgj9qoonvqdfm1.jpg",
+          "location": "lapangan ",
+          "city": " ",
+          "payment_status": ""
+        },
+        {
+          "reservation_id": 92,
+          "email": "jodioperator2@gmail.com",
+          "parking_slot_id": 6,
+          "vehicle_type": "motorcycle",
+          "floor": 2,
+          "slot": 3,
+          "price": 5000,
+          "parking_id": 1,
+          "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1713365922/otaqzqgda5w29a03tmys.jpg",
+          "location": "Tunjungan Plaza Mall",
+          "city": "Surabaya",
+          "payment_status": ""
+        }
+      ],
+      "message": "success get reservation history"
+    }
+  ]
 }

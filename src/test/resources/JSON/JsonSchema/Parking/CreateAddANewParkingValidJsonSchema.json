@@ -26,8 +26,10 @@
       ]
     }
   },
-  "examples": [{
-    "code": 200,
-    "message": "Adding Parking Success"
-  }]
+  "examples": [
+    {
+      "code": 200,
+      "message": "Adding Parking Success"
+    }
+  ]
 }

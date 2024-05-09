@@ -29,6 +29,7 @@ public class GetReservationIdStepDef {
     public void sendRequestGetReservationId() {
         SerenityRest.when().get(ReservationAPI.RESERVATION_ID);
     }
+
     @Then("Status code get reservation should be {int}")
     public void statusCodeGetReservationShouldBe(int statusCode) {
         SerenityRest.and().statusCode(statusCode);
@@ -36,12 +37,12 @@ public class GetReservationIdStepDef {
 
     @And("Response body name get reservation {string}")
     public void responseBodyNameGetReservation(String message) {
-        SerenityRest.and().body(ResponseReservation.MESSAGE,equalTo(message));
+        SerenityRest.and().body(ResponseReservation.MESSAGE, equalTo(message));
     }
 
     @And("Validate get Reservation json schema {string}")
     public void validateGetReservationJsonSchema(String json) {
-        File jsonFile = new File(Constants.JSON_SCHEMA_RESERVATION+json);
+        File jsonFile = new File(Constants.JSON_SCHEMA_RESERVATION + json);
         SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(jsonFile));
     }
 

@@ -62,12 +62,14 @@
           ]
         }
       },
-      "examples": [{
-        "user_id": 167,
-        "fullname": "Jodi User 2",
-        "email": "jodiuser2@gmail.com",
-        "role": "user"
-      }]
+      "examples": [
+        {
+          "user_id": 167,
+          "fullname": "Jodi User 2",
+          "email": "jodiuser2@gmail.com",
+          "role": "user"
+        }
+      ]
     },
     "message": {
       "type": "string",
@@ -78,14 +80,16 @@
       ]
     }
   },
-  "examples": [{
-    "code": 200,
-    "data": {
-      "user_id": 167,
-      "fullname": "Jodi User 2",
-      "email": "jodiuser2@gmail.com",
-      "role": "user"
-    },
-    "message": "berhasil mendapatkan data"
-  }]
+  "examples": [
+    {
+      "code": 200,
+      "data": {
+        "user_id": 167,
+        "fullname": "Jodi User 2",
+        "email": "jodiuser2@gmail.com",
+        "role": "user"
+      },
+      "message": "berhasil mendapatkan data"
+    }
+  ]
 }

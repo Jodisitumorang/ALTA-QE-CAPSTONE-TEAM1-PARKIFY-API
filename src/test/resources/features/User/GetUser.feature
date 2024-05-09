@@ -15,9 +15,9 @@ Feature: Get User
 
 
 #    NEGATIVE
-      @Project
-      Scenario: Get user with invalid token authorization user
-        Given Get user with invalid token authorization user
-        When Send request get user
-        Then Status Code should be 401
+  @Project
+  Scenario: Get user with invalid token authorization user
+    Given Get user with invalid token authorization user
+    When Send request get user
+    Then Status Code should be 401
 

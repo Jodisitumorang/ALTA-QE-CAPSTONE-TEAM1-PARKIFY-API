@@ -26,8 +26,10 @@
       ]
     }
   },
-  "examples": [{
-    "code": 400,
-    "message": "data yang dikirimkan tidak sesuai"
-  }]
+  "examples": [
+    {
+      "code": 400,
+      "message": "data yang dikirimkan tidak sesuai"
+    }
+  ]
 }

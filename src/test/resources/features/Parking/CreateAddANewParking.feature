@@ -33,8 +33,8 @@ Feature: Create Add a New Parking
     And Response body name parking should be "terjadi kesalahan pada proses server"
     And Validate add a new parking json schema "CreateAddANewParkingWithInvalidJsonSchema.json"
 
-   @Project
-   Scenario: Post create add a new parking with valid json and invalid token authorization operator
-     Given Post create add a new parking with valid location "Lapangan Merdeka", city "Kota Tebing Tinggi", imageLoc "lpp.jpg"
-     When Send request post create add a new parking
-     Then Status code parking should be 401
+  @Project
+  Scenario: Post create add a new parking with valid json and invalid token authorization operator
+    Given Post create add a new parking with valid location "Lapangan Merdeka", city "Kota Tebing Tinggi", imageLoc "lpp.jpg"
+    When Send request post create add a new parking
+    Then Status code parking should be 401

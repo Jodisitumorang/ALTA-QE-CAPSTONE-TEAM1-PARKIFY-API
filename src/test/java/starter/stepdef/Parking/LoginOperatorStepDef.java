@@ -21,9 +21,10 @@ public class LoginOperatorStepDef {
 
     @Given("User operator login with email {string}")
     public void userOperatorLoginWithEmail(String json) {
-        File jsonFile = new File(Constants.REQ_BODY_PARKING+json);
+        File jsonFile = new File(Constants.REQ_BODY_PARKING + json);
         parkingAPI.postLoginOperator(jsonFile);
     }
+
     @When("Send request post login operator")
     public void sendRequestPostLoginOperator() {
         Response response = SerenityRest.when().post(ParkingAPI.LOGIN);

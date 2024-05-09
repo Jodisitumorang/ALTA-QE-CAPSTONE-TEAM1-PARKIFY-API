@@ -7,7 +7,6 @@ import io.cucumber.java.en.When;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Steps;
-import starter.jsonph.Parking.ParkingAPI;
 import starter.jsonph.Parkingslot.ParkingSlotAPI;
 import starter.utils.Constants;
 
@@ -18,7 +17,7 @@ public class GetAllParkingSlotStepDef {
     @Steps
     ParkingSlotAPI parkingSlotAPI;
 
-//    POSITIVE
+    //    POSITIVE
     @Given("Get all parking slot with valid token operator")
     public void getAllParkingSlotWithValidTokenOperator() {
         parkingSlotAPI.getAllParkingSlotValid();
@@ -36,7 +35,7 @@ public class GetAllParkingSlotStepDef {
 
     @And("Validate get all parking slot json schema {string}")
     public void validateGetAllParkingSlotJsonSchema(String json) {
-        File jsonFile = new File(Constants.JSON_SCHEMA_PARKING_SLOT+json);
+        File jsonFile = new File(Constants.JSON_SCHEMA_PARKING_SLOT + json);
         SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(jsonFile));
     }
 

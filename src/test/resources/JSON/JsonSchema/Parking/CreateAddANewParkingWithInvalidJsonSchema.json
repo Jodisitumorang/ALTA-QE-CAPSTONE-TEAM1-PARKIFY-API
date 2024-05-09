@@ -26,8 +26,10 @@
       ]
     }
   },
-  "examples": [{
-    "code": 500,
-    "message": "terjadi kesalahan pada proses server"
-  }]
+  "examples": [
+    {
+      "code": 500,
+      "message": "terjadi kesalahan pada proses server"
+    }
+  ]
 }

@@ -34,8 +34,8 @@ Feature: Create Parking Slot
       | bodyJson                              | message                           |
       | CreateParkingSLotInvalidBodyJson.json | data yang dikirimkan tidak sesuai |
 
-    @Project
-    Scenario: Post create parking slot with valid body json and invalid token authorization operator
-      Given Post create parking slot with valid body json "PostParkingSlotInvalidToken.json" and invalid token authorization operator
-      When Send request post create parking slot
-      Then Status code post parking slot should be 401
+  @Project
+  Scenario: Post create parking slot with valid body json and invalid token authorization operator
+    Given Post create parking slot with valid body json "PostParkingSlotInvalidToken.json" and invalid token authorization operator
+    When Send request post create parking slot
+    Then Status code post parking slot should be 401

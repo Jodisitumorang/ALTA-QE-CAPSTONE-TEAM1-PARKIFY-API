@@ -10,14 +10,14 @@ import starter.jsonph.Parking.ParkingAPI;
 import starter.utils.Constants;
 
 import java.io.File;
-import static org.hamcrest.Matchers.equalTo;
+
 
 public class GetParkingIdStepDef {
 
     @Steps
     ParkingAPI parkingAPI;
 
-//  POSITIVE
+    //  POSITIVE
     @Given("Get parking id with valid parameter {} and valid token operator")
     public void getParkingIdWithValidParameterAndValidTokenOperator(int id) {
         parkingAPI.getParkingIdValidData(id);
@@ -30,11 +30,11 @@ public class GetParkingIdStepDef {
 
     @And("Validate get parking json schema {string}")
     public void validateGetParkingJsonSchema(String json) {
-        File jsonFile = new File(Constants.JSON_SCHEMA_PARKING+json);
+        File jsonFile = new File(Constants.JSON_SCHEMA_PARKING + json);
         SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(jsonFile));
     }
 
-//  NEGATIVE
+    //  NEGATIVE
     @Given("Get parking id with invalid parameter {} and valid token operator")
     public void getParkingIdWithInvalidParameterAndValidTokenOperator(String id) {
         parkingAPI.getParkingIdInvalidParameter(id);

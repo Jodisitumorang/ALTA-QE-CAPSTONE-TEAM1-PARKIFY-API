@@ -134,7 +134,36 @@
           ]
         }
       },
-      "examples": [{
+      "examples": [
+        {
+          "reservation_id": 0,
+          "email": "",
+          "parking_slot_id": 0,
+          "vehicle_type": "",
+          "floor": 0,
+          "slot": 0,
+          "price": 0,
+          "parking_id": 0,
+          "image_loc": "",
+          "location": "",
+          "city": "",
+          "payment_status": ""
+        }
+      ]
+    },
+    "message": {
+      "type": "string",
+      "default": "",
+      "title": "The message Schema",
+      "examples": [
+        "success get reservation info"
+      ]
+    }
+  },
+  "examples": [
+    {
+      "code": 200,
+      "data": {
         "reservation_id": 0,
         "email": "",
         "parking_slot_id": 0,
@@ -147,33 +176,8 @@
         "location": "",
         "city": "",
         "payment_status": ""
-      }]
-    },
-    "message": {
-      "type": "string",
-      "default": "",
-      "title": "The message Schema",
-      "examples": [
-        "success get reservation info"
-      ]
+      },
+      "message": "success get reservation info"
     }
-  },
-  "examples": [{
-    "code": 200,
-    "data": {
-      "reservation_id": 0,
-      "email": "",
-      "parking_slot_id": 0,
-      "vehicle_type": "",
-      "floor": 0,
-      "slot": 0,
-      "price": 0,
-      "parking_id": 0,
-      "image_loc": "",
-      "location": "",
-      "city": "",
-      "payment_status": ""
-    },
-    "message": "success get reservation info"
-  }]
+  ]
 }

@@ -16,6 +16,6 @@ public class Constants {
     public static String JSON_SCHEMA_PARKING_SLOT = JSON + "/JsonSchema/ParkingSlot/";
     public static String JSON_SCHEMA_TRANSACTION = JSON + "/JsonSchema/Transaction/";
     public static String JSON_SCHEMA_RESERVATION = JSON + "/JsonSchema/Reservation/";
-    public static String IMAGE_LOC =DIR+"/src/test/resources/Image/";
+    public static String IMAGE_LOC = DIR + "/src/test/resources/Image/";
 
 }

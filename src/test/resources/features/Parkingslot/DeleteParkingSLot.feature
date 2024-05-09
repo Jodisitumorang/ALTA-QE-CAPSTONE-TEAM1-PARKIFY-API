@@ -21,7 +21,7 @@ Feature: Delete Parking Slot Id
     And Validate delete parking slot json schema "<jsonSchema>"
     Examples:
       | id | message                     | jsonSchema                  |  |  |
-      | 36  | success delete parking slot | DeleteParkingSlotValid.json |  |  |
+      | 36 | success delete parking slot | DeleteParkingSlotValid.json |  |  |
 
 #    NEGATIVE
   @Project

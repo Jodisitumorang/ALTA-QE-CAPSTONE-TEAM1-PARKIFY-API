@@ -35,9 +35,11 @@
           ]
         }
       },
-      "examples": [{
-        "reservation_id": 93
-      }]
+      "examples": [
+        {
+          "reservation_id": 93
+        }
+      ]
     },
     "message": {
       "type": "string",
@@ -48,11 +50,13 @@
       ]
     }
   },
-  "examples": [{
-    "code": 201,
-    "data": {
-      "reservation_id": 93
-    },
-    "message": "success create reservation"
-  }]
+  "examples": [
+    {
+      "code": 201,
+      "data": {
+        "reservation_id": 93
+      },
+      "message": "success create reservation"
+    }
+  ]
 }

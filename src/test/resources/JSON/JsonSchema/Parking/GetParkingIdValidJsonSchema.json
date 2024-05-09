@@ -63,12 +63,14 @@
           ]
         }
       },
-      "examples": [{
-        "location": "Danau Toba Lekkk",
-        "city": "Parapat",
-        "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1714981795/mvutqii5cxuoacmy20s5.jpg",
-        "parking_slots": []
-      }]
+      "examples": [
+        {
+          "location": "Danau Toba Lekkk",
+          "city": "Parapat",
+          "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1714981795/mvutqii5cxuoacmy20s5.jpg",
+          "parking_slots": []
+        }
+      ]
     },
     "message": {
       "type": "string",
@@ -79,14 +81,16 @@
       ]
     }
   },
-  "examples": [{
-    "code": 200,
-    "data": {
-      "location": "Danau Toba Lekkk",
-      "city": "Parapat",
-      "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1714981795/mvutqii5cxuoacmy20s5.jpg",
-      "parking_slots": []
-    },
-    "message": "berhasil mendapatkan data"
-  }]
+  "examples": [
+    {
+      "code": 200,
+      "data": {
+        "location": "Danau Toba Lekkk",
+        "city": "Parapat",
+        "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1714981795/mvutqii5cxuoacmy20s5.jpg",
+        "parking_slots": []
+      },
+      "message": "berhasil mendapatkan data"
+    }
+  ]
 }

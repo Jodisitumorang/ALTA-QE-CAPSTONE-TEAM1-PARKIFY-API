@@ -26,8 +26,10 @@
       ]
     }
   },
-  "examples": [{
-    "code": 201,
-    "message": "selamat data sudah terdaftar"
-  }]
+  "examples": [
+    {
+      "code": 201,
+      "message": "selamat data sudah terdaftar"
+    }
+  ]
 }

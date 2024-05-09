@@ -53,11 +53,13 @@
           ]
         }
       },
-      "examples": [{
-        "fullname": "John Doe",
-        "email": "parkifyUS@gmail.com",
-        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhcmtpZnlVU0BnbWFpbC5jb20iLCJleHAiOjE3MTUyNzM0MDQsImlhdCI6MTcxNTI2MjYwNCwicm9sZSI6Im9wZXJhdG9yIn0.EfcHbcnxhTYtXMNV0mNXCaaaifrBy_2xBR6a5k9WknE"
-      }]
+      "examples": [
+        {
+          "fullname": "John Doe",
+          "email": "parkifyUS@gmail.com",
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhcmtpZnlVU0BnbWFpbC5jb20iLCJleHAiOjE3MTUyNzM0MDQsImlhdCI6MTcxNTI2MjYwNCwicm9sZSI6Im9wZXJhdG9yIn0.EfcHbcnxhTYtXMNV0mNXCaaaifrBy_2xBR6a5k9WknE"
+        }
+      ]
     },
     "message": {
       "type": "string",
@@ -68,13 +70,15 @@
       ]
     }
   },
-  "examples": [{
-    "code": 200,
-    "data": {
-      "fullname": "John Doe",
-      "email": "parkifyUS@gmail.com",
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhcmtpZnlVU0BnbWFpbC5jb20iLCJleHAiOjE3MTUyNzM0MDQsImlhdCI6MTcxNTI2MjYwNCwicm9sZSI6Im9wZXJhdG9yIn0.EfcHbcnxhTYtXMNV0mNXCaaaifrBy_2xBR6a5k9WknE"
-    },
-    "message": "berhasil login"
-  }]
+  "examples": [
+    {
+      "code": 200,
+      "data": {
+        "fullname": "John Doe",
+        "email": "parkifyUS@gmail.com",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhcmtpZnlVU0BnbWFpbC5jb20iLCJleHAiOjE3MTUyNzM0MDQsImlhdCI6MTcxNTI2MjYwNCwicm9sZSI6Im9wZXJhdG9yIn0.EfcHbcnxhTYtXMNV0mNXCaaaifrBy_2xBR6a5k9WknE"
+      },
+      "message": "berhasil login"
+    }
+  ]
 }

@@ -15,10 +15,10 @@ public class PutUserStepDef {
     @Steps
     UserAPI userAPI;
 
-//    POSITIVE
+    //    POSITIVE
     @Given("Put user with valid body json {string} and valid token authorization user")
     public void putUserWithValidBodyJsonAndValidTokenAuthorizationUser(String json) {
-        File jsonFile = new File(Constants.REQ_BODY_USER+json);
+        File jsonFile = new File(Constants.REQ_BODY_USER + json);
         userAPI.putUserValidBodyJsonAndValidToken(jsonFile);
     }
 
@@ -29,13 +29,13 @@ public class PutUserStepDef {
 
     @Given("Put user with invalid body json {string} and valid token user")
     public void putUserWithInvalidBodyJsonAndValidTokenUser(String json) {
-        File jsonFile = new File(Constants.REQ_BODY_USER+json);
+        File jsonFile = new File(Constants.REQ_BODY_USER + json);
         userAPI.putUserInvalidBodyJsonAndValidToken(jsonFile);
     }
 
     @Given("Put user with valid body json {string} and invalid token user")
     public void putUserWithValidBodyJsonAndInvalidTokenUser(String json) {
-        File jsonFile = new File(Constants.REQ_BODY_USER+json);
+        File jsonFile = new File(Constants.REQ_BODY_USER + json);
         userAPI.putUserValidBodyJsonAndInvalidToken(jsonFile);
     }
 

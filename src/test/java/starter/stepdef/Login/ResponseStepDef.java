@@ -13,7 +13,6 @@ import java.io.File;
 public class ResponseStepDef {
 
 
-
     @When("Send request post login user")
     public void sendRequestPostLoginUser() {
         SerenityRest.when().post(LoginAPI.LOGIN);
@@ -28,7 +27,7 @@ public class ResponseStepDef {
 
     @And("Validate login user json schema {string}")
     public void validateLoginUserJsonSchema(String json) {
-        File jsonFile = new File(Constants.JSON_SCHEMA_LOGIN+json);
+        File jsonFile = new File(Constants.JSON_SCHEMA_LOGIN + json);
         SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(jsonFile));
     }
 

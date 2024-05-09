@@ -14,6 +14,7 @@ import starter.utils.Constants;
 import java.io.File;
 
 import static org.hamcrest.Matchers.equalTo;
+
 public class GetAllReservationStepDef {
 
     @Steps
@@ -24,6 +25,7 @@ public class GetAllReservationStepDef {
     public void getAllReservationWithValidTokenOperator() {
         reservationAPI.getAllReservation();
     }
+
     @When("Send request get all reservation")
     public void sendRequestGetAllReservation() {
         SerenityRest.when().get(ReservationAPI.RESERVATION);
@@ -36,12 +38,12 @@ public class GetAllReservationStepDef {
 
     @And("Response body name all reservation {string}")
     public void responseBodyNameAllReservation(String message) {
-        SerenityRest.and().body(ResponseReservation.MESSAGE,equalTo(message));
+        SerenityRest.and().body(ResponseReservation.MESSAGE, equalTo(message));
     }
 
     @And("Validate get reservation json schema {string}")
     public void validateGetReservationJsonSchema(String json) {
-        File jsonFile = new File(Constants.JSON_SCHEMA_RESERVATION+json);
+        File jsonFile = new File(Constants.JSON_SCHEMA_RESERVATION + json);
         SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(jsonFile));
     }
 

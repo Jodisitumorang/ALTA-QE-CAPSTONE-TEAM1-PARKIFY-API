@@ -4,9 +4,13 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Steps;
 import starter.jsonph.Parkingslot.ParkingSlotAPI;
+import starter.utils.Constants;
+
+import java.io.File;
 
 public class DeleteParkingSlotStepDef {
 
@@ -30,7 +34,8 @@ public class DeleteParkingSlotStepDef {
 
     @And("Validate delete parking slot json schema {string}")
     public void validateDeleteParkingSlotJsonSchema(String json) {
-
+        File jsonFile = new File(Constants.JSON_SCHEMA_PARKING_SLOT + json);
+        SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(jsonFile));
     }
 
     @Given("Delete parking slot with invalid parameter {} and valid token operator")
