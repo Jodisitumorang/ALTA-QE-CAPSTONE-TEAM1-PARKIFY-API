@@ -16,7 +16,7 @@ Feature: Create Login
 
   @TCLO-2
   Scenario Outline: Post create login user invalid data body json
-    Given Post create login user with invalid data body json "<bodyJson>"
+    Given Create login user with invalid data body json "<bodyJson>"
     When Send request post login user
     Then Status code Login should be 400
     And Response body name should be "<message>"
