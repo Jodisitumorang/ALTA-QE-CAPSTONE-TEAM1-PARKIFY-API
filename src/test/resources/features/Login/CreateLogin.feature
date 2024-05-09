@@ -10,9 +10,9 @@ Feature: Create Login
     And Response body name should be "<message>"
     And Validate login user json schema "<jsonSchema>"
     Examples:
-      | bodyJson | message | jsonSchema |
-      |          |         |            |
-      |          |         |            |
+      | bodyJson     | message        | jsonSchema         |
+      | LoginOP.json | berhasil login | LoginOPSchema.json |
+      | LoginUS.json | berhasil login | LoginUSSchema.json |
 
   @TCLO-2
   Scenario Outline: Post create login user invalid data body json
