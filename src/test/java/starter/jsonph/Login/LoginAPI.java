@@ -24,5 +24,22 @@ public class LoginAPI {
                 .body(json);
     }
 
+//  Login Operator
+    @Step("Login operator")
+    public void postLogiOperator(File json){
+        SerenityRest.given()
+                .contentType(ContentType.JSON)
+                .body(json);
+    }
+
+//   Login User
+    @Step ("Login User")
+    public void postLoginUser (File json) {
+        SerenityRest.given()
+                .contentType(ContentType.JSON)
+                .body(json);
+    }
+
+
 
 }

@@ -45,7 +45,7 @@ public class ParkingStepDef {
     @Given("Post create add a new parking with invalid location {string}, city {string}, imageloc {string}")
     public void postCreateAddANewParkingWithInvalidLocationCityImageloc(String location, String city, String imageLoc) {
         File imageFile = new File(Constants.IMAGE_LOC + imageLoc);
-        parkingAPI.postCreateAddANewParkingInvalidJson(location, city, imageFile);
+        parkingAPI.postCreateAddANewParkingInvalidJson(location,city,imageFile);
     }
 
     @Given("Post create add a new parking with valid location {string}, city {string}, imageLoc {string}")

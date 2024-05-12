@@ -3,7 +3,7 @@ package starter.jsonph.Parkingslot;
 import io.restassured.http.ContentType;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
-import starter.stepdef.Parking.LoginOperatorStepDef;
+import starter.stepdef.Login.LoginOperatorStepDef;
 import starter.utils.Constants;
 
 import java.io.File;

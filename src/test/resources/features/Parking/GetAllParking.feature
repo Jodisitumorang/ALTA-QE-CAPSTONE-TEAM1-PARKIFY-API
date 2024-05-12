@@ -4,9 +4,9 @@ Feature: Get All Parking
 
   @Project
   Scenario Outline: : Already login operator
-    Given User operator login with email "<json>"
-    When Send request post login operator
-    Then Status code parking should be 200
+    Given   User operator login with email "<json>"
+    When    Send request post login operator
+    Then    Status code parking should be 200
     Examples:
       | json                   |
       | PostLoginOperator.json |
@@ -14,11 +14,11 @@ Feature: Get All Parking
 #  POSITIVE
   @Project
   Scenario Outline: Get all parking with valid token authorization operator
-    Given Get all parking with valid token authorization operator
-    When Send request get all parking
-    Then Status code parking should be 200
-    And Response body name all parking should be "<message>"
-    And Validate get all parking json schema "<jsonSchema>"
+    Given   Get all parking with valid token authorization operator
+    When    Send request get all parking
+    Then    Status code parking should be 200
+    And     Response body name all parking should be "<message>"
+    And     Validate get all parking json schema "<jsonSchema>"
     Examples:
       | message                  | jsonSchema                                 |
       | successfully get parking | GetAllParkingWithValidTokenJsonSchema.json |
@@ -26,6 +26,6 @@ Feature: Get All Parking
 #   NEGATIVE
   @Project
   Scenario: Get all parking with invalid token authorization operator
-    Given Get all parking with invalid token authorization operator
-    When Send request get all parking
-    Then Status code parking should be 401
+    Given   Get all parking with invalid token authorization operator
+    When    Send request get all parking
+    Then    Status code parking should be 401

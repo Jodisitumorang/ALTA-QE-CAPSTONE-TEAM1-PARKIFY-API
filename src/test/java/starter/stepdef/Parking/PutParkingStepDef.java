@@ -19,13 +19,14 @@ public class PutParkingStepDef {
     @Given("Put parking with valid parameter id {}, valid json location {string}, city {string}, imageloc {string} and valid authorization operator")
     public void putParkingWithValidParameterIdValidJsonLocationCityImagelocAndValidAuthorizationOperator(int id, String location, String city, String imageLoc) {
         File imageFile = new File(Constants.IMAGE_LOC + imageLoc);
-        parkingAPI.putParkingValidData(id, location, city, imageFile);
+        parkingAPI.putParkingValidData(id,location,city,imageFile);
     }
 
-    @When("Send request put parking")
-    public void sendRequestPutParking() {
+    @When("Send request update parking")
+    public void sendRequestUpdateParking() {
         SerenityRest.when().put(ParkingAPI.PARKING_ID);
     }
+
 
     @And("Validate put parking json schema {string}")
     public void validatePutParkingJsonSchema(String json) {
@@ -45,6 +46,7 @@ public class PutParkingStepDef {
         File imageFile = new File(Constants.IMAGE_LOC + imageLoc);
         parkingAPI.putParkingInvalidToken(id, location, city, imageFile);
     }
+
 
 
 }

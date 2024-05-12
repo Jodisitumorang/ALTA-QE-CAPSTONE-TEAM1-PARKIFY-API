@@ -3,7 +3,7 @@ package starter.jsonph.Transaction;
 import io.restassured.http.ContentType;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
-import starter.stepdef.Parking.LoginOperatorStepDef;
+import starter.stepdef.Login.LoginOperatorStepDef;
 import starter.utils.Constants;
 
 import java.io.File;
@@ -52,7 +52,7 @@ public class TransactionAPI {
     public void getTransactionValidData(int id) {
         SerenityRest.given()
                 .pathParam("id", id)
-                .header("Authorization", TOKEN_OPERATOR);
+                .header("Authorization","Bearer "+LoginOperatorStepDef.token);
     }
 
     //    NEGATIVE
@@ -60,7 +60,7 @@ public class TransactionAPI {
     public void getTransactionInvalidParameter(String id) {
         SerenityRest.given()
                 .pathParam("id", id)
-                .header("Authorization", TOKEN_OPERATOR);
+                .header("Authorization","Bearer "+LoginOperatorStepDef.token);
     }
 
     @Step("Get transaction id with valid parameter id and invalid token operator")

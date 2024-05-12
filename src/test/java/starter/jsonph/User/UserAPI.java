@@ -3,6 +3,7 @@ package starter.jsonph.User;
 import io.restassured.http.ContentType;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
+import starter.stepdef.Login.LoginUserStepDef;
 import starter.utils.Constants;
 
 import java.io.File;
@@ -53,7 +54,7 @@ public class UserAPI {
     @Step("Put user with valid body json and token user")
     public void putUserValidBodyJsonAndValidToken(File json) {
         SerenityRest.given()
-                .header("Authorization", TOKEN_USER)
+                .header("Authorization", "Bearer "+ LoginUserStepDef.token)
                 .contentType(ContentType.JSON)
                 .body(json);
     }
@@ -62,7 +63,7 @@ public class UserAPI {
     @Step("Put user with invalid body json and valid token user")
     public void putUserInvalidBodyJsonAndValidToken(File json) {
         SerenityRest.given()
-                .header("Authorization", TOKEN_USER)
+                .header("Authorization", "Bearer "+LoginUserStepDef.token)
                 .contentType(ContentType.JSON)
                 .body(json);
     }
